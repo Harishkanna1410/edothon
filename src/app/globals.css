@@ -1,0 +1,124 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #0c0e14;
+  --foreground: #f3f4f6;
+  --font-display: "Syne", "Space Grotesk", sans-serif;
+  --font-body: "Space Grotesk", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  color-scheme: dark;
+}
+
+body {
+  color: var(--foreground);
+  background-color: var(--background);
+  font-family: "Space Grotesk", -apple-system, BlinkMacSystemFont, sans-serif;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, .font-display {
+  font-family: "Syne", "Space Grotesk", -apple-system, sans-serif;
+}
+
+/* Authentic Technical Grid Pattern */
+.bg-grid {
+  background-size: 32px 32px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+}
+
+.bg-dots {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.12) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+/* Neo-Brutalist Tilted Stickers */
+.sticker-tag {
+  display: inline-flex;
+  align-items: center;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border: 2px solid #000;
+  box-shadow: 3px 3px 0px #000;
+  transition: all 0.2s ease;
+}
+
+.sticker-tag:hover {
+  transform: translate(-1px, -1px);
+  box-shadow: 5px 5px 0px #000;
+}
+
+/* Highlighter Stroke Effect */
+.highlight-box {
+  position: relative;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.highlight-box::before {
+  content: "";
+  position: absolute;
+  inset: 0.1em -0.2em -0.1em -0.2em;
+  background: #9ae885;
+  transform: rotate(-1.5deg) skewX(-4deg);
+  z-index: 0;
+  border: 2px solid #000;
+  box-shadow: 3px 3px 0px #000;
+}
+
+.highlight-box > span {
+  position: relative;
+  z-index: 1;
+  color: #000;
+  font-weight: 900;
+}
+
+/* Neo-Brutalist Interactive Button */
+.btn-brutal {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border: 2.5px solid #000;
+  box-shadow: 4px 4px 0px #000;
+  transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-brutal:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0px #000;
+}
+
+.btn-brutal:active {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0px #000;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 9px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0c0e14;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #252b3d;
+  border: 2px solid #0c0e14;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #9ae885;
+}

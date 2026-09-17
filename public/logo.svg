@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <rect width="100" height="100" rx="24" fill="#08090D"/>
+  <rect x="2" y="2" width="96" height="96" rx="22" stroke="url(#borderGlow)" stroke-width="2"/>
+  <path d="M54 18L24 58H48L42 82L76 42H50L54 18Z" fill="url(#boltGrad)"/>
+  <circle cx="75" cy="25" r="4" fill="#06B6D4" />
+  <defs>
+    <linearGradient id="borderGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9333EA"/>
+      <stop offset="100%" stop-color="#06B6D4"/>
+    </linearGradient>
+    <linearGradient id="boltGrad" x1="24" y1="18" x2="76" y2="82" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#9333EA"/>
+      <stop offset="50%" stop-color="#8B5CF6"/>
+      <stop offset="100%" stop-color="#06B6D4"/>
+    </linearGradient>
+  </defs>
+</svg>
