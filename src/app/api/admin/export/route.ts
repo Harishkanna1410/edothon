@@ -17,9 +17,7 @@ function registrationToCsvRow(reg: Registration): string {
   const leader = reg.members.find((m) => m.isLeader) || reg.members[0];
   const memberNames = reg.members.map((m) => m.name).join(" | ");
   const memberEmails = reg.members.map((m) => m.email).join(" | ");
-  const memberColleges = [...new Set(reg.members.map((m) => m.college))].join(
-    " | "
-  );
+  const memberColleges = Array.from(new Set(reg.members.map((m) => m.college))).join(" | ");
 
   return [
     escapeCsv(reg.id),
